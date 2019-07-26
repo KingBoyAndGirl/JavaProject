@@ -55,7 +55,7 @@ public class DouDiZhu {
         for (int i = 0; i < pokerIndex.size(); i++) {
             Integer in = pokerIndex.get(i);
             //轮流发牌
-            if (i>51){
+            if (i>=51){
                 //给底牌发牌
                 diPai.add(in);
             }else if(i % 3==0){
@@ -64,7 +64,7 @@ public class DouDiZhu {
             }else if(i % 3==1){
                 //发玩家02发牌
                 player02.add(in);
-            }else if(i % 3==2){
+            }else{
                 //发玩家03发牌
                 player03.add(in);
             }
@@ -79,7 +79,7 @@ public class DouDiZhu {
         //5.看牌
         lookPoker("刘德华",poker,player01);
         lookPoker("周润发",poker,player02);
-        lookPoker("周星驰",poker,player02);
+        lookPoker("周星驰",poker,player03);
         lookPoker("底牌",poker,diPai);
 
     }

@@ -2,7 +2,6 @@ package com.king.landLords;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 
 /**
  * @ProjectName: Java
@@ -46,7 +45,7 @@ public class DouDiZhu {
             //获取每一张牌
             String p = poker.get(i);
             //轮流发牌
-            if (i>51){
+            if (i>=51){
                 //给底牌发牌
                 diPai.add(p);
             }else if(i % 3==0){
@@ -55,7 +54,7 @@ public class DouDiZhu {
             }else if(i % 3==1){
                 //发玩家02发牌
                 player02.add(p);
-            }else if(i % 3==2){
+            }else {
                 //发玩家03发牌
                 player03.add(p);
             }
