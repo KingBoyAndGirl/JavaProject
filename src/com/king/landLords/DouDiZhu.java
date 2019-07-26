@@ -1,9 +1,8 @@
-package com.king.landlords;
+package com.king.landLords;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.SortedMap;
 
 /**
  * @ProjectName: Java
@@ -18,7 +17,7 @@ public class DouDiZhu {
     public static void main(String[] args) {
         //1.准备牌
         //定义一个存储54张牌的ArrayList集合，泛型使用String
-        List<String> poker = new ArrayList<>();
+        ArrayList<String> poker = new ArrayList<>();
         //定义两个数组，一个数组存储牌的花色，一个数组存储牌的序号
         String[] colors={"♠","♥","♣","♦"};
         String[] numbers={"2","A","K","Q","J","10","9","8","7","6","5","4","3"};
@@ -67,7 +66,5 @@ public class DouDiZhu {
         System.out.println("周润发："+player02);
         System.out.println("周星驰："+player03);
         System.out.println("底牌："+diPai);
-
-
     }
 }
